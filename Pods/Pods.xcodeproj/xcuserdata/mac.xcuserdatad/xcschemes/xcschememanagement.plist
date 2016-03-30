@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>KxMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PopMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XHRealTimeBlur.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0A0BFF15E5C104F82F9764D14045B1B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21ACCF0A8966FA453A73C558D93DB4FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06F49D64E04DCD9683D916034330CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF35AA8C888E2D3F9D5E28C8C599EBE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3B87AAE18DAACFE5E79BD9A367356A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
