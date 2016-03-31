@@ -35,13 +35,28 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     func createView() {
     
+        //用户名
         let UserNameTextFeild = createTextField(CGRect(x:20, y:80 ,width:WIDTH-40, height:36), placeholder: "请输入用户名", passWord: false, Font: 14)
         self.view.addSubview(UserNameTextFeild)
         UserNameTextFeild.delegate = self
         
-        let PasswordTextFeild = createTextField(CGRect(x:20, y:80+36+10 ,width:WIDTH-40, height:36), placeholder: "请输入密码", passWord: true, Font: 14)
+        //密码
+        let PasswordTextFeild = createTextField(CGRect(x:20, y:130 ,width:WIDTH-40, height:36), placeholder: "请输入密码", passWord: true, Font: 14)
         self.view.addSubview(PasswordTextFeild)
         PasswordTextFeild.delegate = self
+        
+        //登录
+        let loginButton = createButton(CGRect(x:20, y:180 ,width:WIDTH-40, height:36), Text: "登录", ImageName: "", bgImageName: "", Target: self, Method: Selector("loginButtonClick"))
+        loginButton.backgroundColor = RGBA (86.0, g:173.0, b: 216.0, a: 1)
+        loginButton.titleLabel?.font = UIFont.systemFontOfSize(18.0)
+        loginButton.layer.masksToBounds = true;
+        loginButton.layer.cornerRadius = 5.0;
+        self.view.addSubview(loginButton)
+        
+        
+        
+        
+        
         
         //收起键盘
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "tapRootAction"))
@@ -51,6 +66,34 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         //增加监听，当键退出时收出消息
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
     }
+    
+    
+    
+    
+    func loginButtonClick() {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     //输入完毕
     func textFieldShouldReturn(textField: UITextField) -> Bool {
