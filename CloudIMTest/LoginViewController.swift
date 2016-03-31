@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
     
     func createNav() {
         //设置导航不透明
-        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.translucent = true
         
         //设置导航的标题
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:RGBA (255.0, g:255.0, b: 255.0, a: 1),NSFontAttributeName:UIFont.systemFontOfSize(18)]
@@ -35,9 +35,54 @@ class LoginViewController: UIViewController {
     
     func createView() {
     
-        let UserNameTextFeild = createTextField(CGRect(x:20, y:380 ,width:WIDTH-40, height:30), placeholder: "请输入用户名", passWord: false, Font: 14)
+        let UserNameTextFeild = createTextField(CGRect(x:20, y:80 ,width:WIDTH-40, height:36), placeholder: "请输入用户名", passWord: false, Font: 14)
         self.view.addSubview(UserNameTextFeild)
+        UserNameTextFeild.delegate = self
         
+        let PasswordTextFeild = createTextField(CGRect(x:20, y:80+36+10 ,width:WIDTH-40, height:36), placeholder: "请输入密码", passWord: true, Font: 14)
+        self.view.addSubview(PasswordTextFeild)
+        PasswordTextFeild.delegate = self
+        
+        //收起键盘
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "tapRootAction"))
+        
+        //增加监听，当键盘出现或改变时收出消息
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
+        //增加监听，当键退出时收出消息
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    //输入完毕
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //收起键盘
+        self.tapRootAction()
+        return true
+    }
+    
+    //当键盘出现时调用
+    func keyboardWillShow(aNotification:NSNotification) {
+        //第一个参数写输入view的父view即可，第二个写监听获得的notification，第三个写希望高于键盘的高度(只在被键盘遮挡时才启用,如控件未被遮挡,则无变化)
+        //如果想不通输入view获得不同高度，可自己在此方法里分别判断区别
+        CDPMonitorKeyboard.defaultMonitorKeyboard().keyboardWillShowWithSuperView(self.view, andNotification: aNotification, higherThanKeyboard: 0, contentOffsety: 0)
+    }
+    
+    //当键退出时调用
+    func keyboardWillHide(aNotification:NSNotification) {
+        CDPMonitorKeyboard .defaultMonitorKeyboard().keyboardWillHide()
+    }
+    
+    //页面消息时
+    override func viewDidDisappear(animated: Bool) {
+        //移除监听，当键盘出现或改变时收出消息
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        
+        //移除监听，当键退出时收出消息
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    //收起键盘
+    func tapRootAction() {
+        self.view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
