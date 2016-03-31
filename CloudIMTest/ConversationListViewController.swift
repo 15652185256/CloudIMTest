@@ -69,7 +69,7 @@ class ConversationListViewController: RCConversationListViewController {
         let button = UIButton(type:.Custom)
         button.frame = CGRectMake(0, 0, 50, 30)
         button.setTitle("添加", forState: UIControlState.Normal)
-        button.addTarget(self, action: Selector("buttonClick:"), forControlEvents:UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: Selector("buttonClick1:"), forControlEvents:UIControlEvents.TouchUpInside)
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
@@ -81,10 +81,7 @@ class ConversationListViewController: RCConversationListViewController {
         KxMenu.showMenuInView(self.view, fromRect:frame , menuItems: [
             KxMenuItem("客服",image: UIImage(named: "tabbar_information@2x.png"), target: self, action: "ClickMenu1"),
             KxMenuItem("测试与小波聊天",image: UIImage(named: "tabbar_tool@2x.png"), target: self, action: "ClickMenu2"),
-            
             ])
-        
-        
     }
     
     func ClickMenu1() {
@@ -100,6 +97,46 @@ class ConversationListViewController: RCConversationListViewController {
         conVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(conVC, animated: true)
     }
+    
+    
+    
+    
+    
+    func buttonClick1(button:UIButton) {
+        
+        let items = [
+            MenuItem(title: "客服", iconName: "tabbar_information@2x.png", glowColor: UIColor.redColor(), index: 0),
+            MenuItem(title: "与小波聊天", iconName: "tabbar_tool@2x.png", glowColor: UIColor.blueColor(), index: 1),
+            MenuItem(title: "通讯录", iconName: "tabbar_venues@2x.png", glowColor: UIColor.yellowColor(), index: 2),
+            MenuItem(title: "关于", iconName: "tabbar_user@2x.png", glowColor: UIColor.grayColor(), index: 3),
+        ]
+        
+        let menu = PopMenu(frame: self.view.bounds, items: items)
+        
+        menu.menuAnimationType = PopMenuAnimationType.NetEase
+        
+        if menu.isShowed {
+            return
+        }
+        
+        menu.didSelectedItemCompletion = { (selectedItem:MenuItem!) -> Void in
+            
+            print(selectedItem.index)
+            
+            switch selectedItem.index {
+                case 1:
+                    self.ClickMenu2()
+                default:
+                    print(selectedItem.title)
+            }
+        }
+        
+        menu.showMenuAtView(self.view)
+        
+    }
+    
+    
+    
     
 
     override func didReceiveMemoryWarning() {
