@@ -36,9 +36,9 @@
 		041D54F51CAA244C00030FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041D54F41CAA244C00030FB0 /* Assets.xcassets */; };
 		041D54F81CAA244C00030FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041D54F61CAA244C00030FB0 /* LaunchScreen.storyboard */; };
 		041D55001CAA28E800030FB0 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 041D54FF1CAA28E800030FB0 /* PodFile */; };
+		044CAD1F1CACC31D00A96EB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */; };
 		045BAE1B1CAA67C800F86CE1 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */; };
 		0499B1D81CAA571400497DE6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499B1D51CAA571400497DE6 /* Config.swift */; };
-		0499B1D91CAA571400497DE6 /* ZCControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499B1D71CAA571400497DE6 /* ZCControl.swift */; };
 		BB51412310708B9ACFF56339 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FACDF321335E9D914CE203 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -74,10 +74,10 @@
 		041D54F71CAA244C00030FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041D54F91CAA244C00030FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041D54FF1CAA28E800030FB0 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		0499B1CD1CAA519A00497DE6 /* CloudIMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudIMTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		0499B1D51CAA571400497DE6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		0499B1D71CAA571400497DE6 /* ZCControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCControl.swift; sourceTree = "<group>"; };
 		56BCC9A61BB76F0C5D1BBF08 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A7FACDF321335E9D914CE203 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1CD9BC1292023ED1328E83 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,8 +161,8 @@
 			children = (
 				04188C0B1CAB68CC004B7207 /* Resource */,
 				0499B1D41CAA571400497DE6 /* Config */,
-				0499B1D61CAA571400497DE6 /* Tools */,
 				041D54ED1CAA244C00030FB0 /* AppDelegate.swift */,
+				044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */,
 				041D54EF1CAA244C00030FB0 /* ViewController.swift */,
 				04188C091CAB65C7004B7207 /* ConversationListViewController.swift */,
 				045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */,
@@ -184,14 +184,6 @@
 				0499B1D51CAA571400497DE6 /* Config.swift */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		0499B1D61CAA571400497DE6 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				0499B1D71CAA571400497DE6 /* ZCControl.swift */,
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		943A39B54801BBBCEFDC895E /* Pods */ = {
@@ -354,13 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04188C371CAB8107004B7207 /* ServeViewController.swift in Sources */,
-				0499B1D91CAA571400497DE6 /* ZCControl.swift in Sources */,
 				04188C351CAB80BC004B7207 /* ContactViewController.swift in Sources */,
 				04188C391CAB821D004B7207 /* AboutViewController.swift in Sources */,
 				041D54F01CAA244C00030FB0 /* ViewController.swift in Sources */,
 				045BAE1B1CAA67C800F86CE1 /* ConversationViewController.swift in Sources */,
 				04188C0A1CAB65C7004B7207 /* ConversationListViewController.swift in Sources */,
 				041D54EE1CAA244C00030FB0 /* AppDelegate.swift in Sources */,
+				044CAD1F1CACC31D00A96EB7 /* LoginViewController.swift in Sources */,
 				0499B1D81CAA571400497DE6 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

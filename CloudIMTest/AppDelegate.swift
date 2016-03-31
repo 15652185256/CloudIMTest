@@ -69,13 +69,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        
-        
-        
-        
-        
-        
-        self.window?.rootViewController = ViewController();
+        let navigationVC = UINavigationController(rootViewController: LoginViewController());
+        self.window?.rootViewController = navigationVC;
         self.window?.makeKeyAndVisible();
         
         
