@@ -38,6 +38,7 @@
 		041D55001CAA28E800030FB0 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 041D54FF1CAA28E800030FB0 /* PodFile */; };
 		044CAD1F1CACC31D00A96EB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */; };
 		044CAD241CACC69900A96EB7 /* CDPMonitorKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD231CACC69900A96EB7 /* CDPMonitorKeyboard.m */; };
+		044CAD261CAD0B7D00A96EB7 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD251CAD0B7D00A96EB7 /* RoundImageView.swift */; };
 		045BAE1B1CAA67C800F86CE1 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */; };
 		0499B1D81CAA571400497DE6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499B1D51CAA571400497DE6 /* Config.swift */; };
 		BB51412310708B9ACFF56339 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FACDF321335E9D914CE203 /* libPods.a */; };
@@ -78,6 +79,7 @@
 		044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		044CAD221CACC69900A96EB7 /* CDPMonitorKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPMonitorKeyboard.h; sourceTree = "<group>"; };
 		044CAD231CACC69900A96EB7 /* CDPMonitorKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPMonitorKeyboard.m; sourceTree = "<group>"; };
+		044CAD251CAD0B7D00A96EB7 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		0499B1CD1CAA519A00497DE6 /* CloudIMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudIMTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		0499B1D51CAA571400497DE6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				044CAD201CACC69900A96EB7 /* Vendor */,
 				041D54ED1CAA244C00030FB0 /* AppDelegate.swift */,
 				044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */,
+				044CAD251CAD0B7D00A96EB7 /* RoundImageView.swift */,
 				041D54EF1CAA244C00030FB0 /* ViewController.swift */,
 				04188C091CAB65C7004B7207 /* ConversationListViewController.swift */,
 				045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */,
@@ -368,6 +371,7 @@
 			files = (
 				04188C371CAB8107004B7207 /* ServeViewController.swift in Sources */,
 				04188C351CAB80BC004B7207 /* ContactViewController.swift in Sources */,
+				044CAD261CAD0B7D00A96EB7 /* RoundImageView.swift in Sources */,
 				04188C391CAB821D004B7207 /* AboutViewController.swift in Sources */,
 				041D54F01CAA244C00030FB0 /* ViewController.swift in Sources */,
 				045BAE1B1CAA67C800F86CE1 /* ConversationViewController.swift in Sources */,
