@@ -36,6 +36,9 @@
 		041D54F51CAA244C00030FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041D54F41CAA244C00030FB0 /* Assets.xcassets */; };
 		041D54F81CAA244C00030FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041D54F61CAA244C00030FB0 /* LaunchScreen.storyboard */; };
 		041D55001CAA28E800030FB0 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 041D54FF1CAA28E800030FB0 /* PodFile */; };
+		0426661F1CAE5B9F0092DC3D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0426661C1CAE5B9F0092DC3D /* 1.jpg */; };
+		042666201CAE5B9F0092DC3D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0426661D1CAE5B9F0092DC3D /* 2.jpg */; };
+		042666211CAE5B9F0092DC3D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0426661E1CAE5B9F0092DC3D /* 3.jpg */; };
 		044CAD1F1CACC31D00A96EB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */; };
 		044CAD241CACC69900A96EB7 /* CDPMonitorKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD231CACC69900A96EB7 /* CDPMonitorKeyboard.m */; };
 		044CAD261CAD0B7D00A96EB7 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD251CAD0B7D00A96EB7 /* RoundImageView.swift */; };
@@ -76,6 +79,9 @@
 		041D54F71CAA244C00030FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041D54F91CAA244C00030FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041D54FF1CAA28E800030FB0 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		0426661C1CAE5B9F0092DC3D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		0426661D1CAE5B9F0092DC3D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		0426661E1CAE5B9F0092DC3D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		044CAD221CACC69900A96EB7 /* CDPMonitorKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPMonitorKeyboard.h; sourceTree = "<group>"; };
 		044CAD231CACC69900A96EB7 /* CDPMonitorKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPMonitorKeyboard.m; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		04188C0C1CAB68CC004B7207 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0426661B1CAE5B9F0092DC3D /* BgImage */,
 				04188C0D1CAB68CC004B7207 /* TabBar */,
 			);
 			path = Images;
@@ -183,6 +190,16 @@
 				0499B1CD1CAA519A00497DE6 /* CloudIMTest-Bridging-Header.h */,
 			);
 			path = CloudIMTest;
+			sourceTree = "<group>";
+		};
+		0426661B1CAE5B9F0092DC3D /* BgImage */ = {
+			isa = PBXGroup;
+			children = (
+				0426661C1CAE5B9F0092DC3D /* 1.jpg */,
+				0426661D1CAE5B9F0092DC3D /* 2.jpg */,
+				0426661E1CAE5B9F0092DC3D /* 3.jpg */,
+			);
+			path = BgImage;
 			sourceTree = "<group>";
 		};
 		044CAD201CACC69900A96EB7 /* Vendor */ = {
@@ -305,10 +322,13 @@
 				04188C251CAB68CC004B7207 /* tabbar_information@3x.png in Resources */,
 				041D54F31CAA244C00030FB0 /* Main.storyboard in Resources */,
 				04188C2C1CAB68CC004B7207 /* un_tabbar_information@2x.png in Resources */,
+				042666211CAE5B9F0092DC3D /* 3.jpg in Resources */,
 				04188C271CAB68CC004B7207 /* tabbar_tool@3x.png in Resources */,
 				04188C2A1CAB68CC004B7207 /* tabbar_venues@2x.png in Resources */,
 				04188C301CAB68CC004B7207 /* un_tabbar_user@2x.png in Resources */,
 				04188C241CAB68CC004B7207 /* tabbar_information@2x.png in Resources */,
+				0426661F1CAE5B9F0092DC3D /* 1.jpg in Resources */,
+				042666201CAE5B9F0092DC3D /* 2.jpg in Resources */,
 				04188C321CAB68CC004B7207 /* un_tabbar_venues@2x.png in Resources */,
 				04188C331CAB68CC004B7207 /* un_tabbar_venues@3x.png in Resources */,
 			);

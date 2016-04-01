@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '40FF850B79AD5A0EE3F60A94'
-               BlueprintName = 'KxMenu'
+               BlueprintIdentifier = 'A26B04BFFD17F56CC9970381'
+               BlueprintName = 'MSWeakTimer'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libKxMenu.a'>
+               BuildableName = 'libMSWeakTimer.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

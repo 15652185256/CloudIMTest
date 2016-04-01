@@ -22,7 +22,7 @@ import UIKit
 //    }
 //}
 
-class LoginViewController: UIViewController,UITextFieldDelegate {
+class LoginViewController: UIViewController,UITextFieldDelegate,JSAnimatedImagesViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,12 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     func createView() {
     
+        //背景图
+        let bgImageVeiw = JSAnimatedImagesView(frame: CGRect(x:0, y:0 ,width:WIDTH, height:HEIGHT))
+        self.view.addSubview(bgImageVeiw)
+        bgImageVeiw.dataSource = self
+        
+        
         //用户名
         let UserNameTextFeild = createTextField(CGRect(x:20, y:80 ,width:WIDTH-40, height:36), placeholder: "请输入用户名", passWord: false, Font: 14)
         self.view.addSubview(UserNameTextFeild)
@@ -82,10 +88,12 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     
+    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+        return 3
+    }
     
-    
-    func loginButtonClick() {
-        
+    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+        return UIImage(named:"\(index+1).jpg")
     }
     
     
@@ -94,11 +102,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     
     
-    
-    
-    
-    
-    
+    //登录
+    func loginButtonClick() {
+        
+    }
     
     
     

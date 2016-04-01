@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '40FF850B79AD5A0EE3F60A94'
-               BlueprintName = 'KxMenu'
+               BlueprintIdentifier = 'A2276D485C7CC230BA15817C'
+               BlueprintName = 'JSAnimatedImagesView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libKxMenu.a'>
+               BuildableName = 'libJSAnimatedImagesView.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
