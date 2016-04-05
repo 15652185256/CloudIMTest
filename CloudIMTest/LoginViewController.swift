@@ -4,7 +4,7 @@
 //
 //  Created by 赵晓东 on 16/3/31.
 //  Copyright © 2016年 ZXD. All rights reserved.
-//
+// github.com/yagamis/IM_Swift2
 
 import UIKit
 
@@ -22,7 +22,8 @@ import UIKit
 //    }
 //}
 
-class LoginViewController: UIViewController,UITextFieldDelegate,JSAnimatedImagesViewDataSource {
+//class LoginViewController: UIViewController,UITextFieldDelegate,JSAnimatedImagesViewDataSource {
+class LoginViewController: UIViewController,UITextFieldDelegate,RCAnimatedImagesViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,10 +51,13 @@ class LoginViewController: UIViewController,UITextFieldDelegate,JSAnimatedImages
     func createView() {
     
         //背景图
-        let bgImageVeiw = JSAnimatedImagesView(frame: CGRect(x:0, y:0 ,width:WIDTH, height:HEIGHT))
+//        let bgImageVeiw = JSAnimatedImagesView(frame: CGRect(x:0, y:0 ,width:WIDTH, height:HEIGHT))
+//        self.view.addSubview(bgImageVeiw)
+//        bgImageVeiw.dataSource = self
+        let bgImageVeiw = RCAnimatedImagesView(frame: CGRect(x:0, y:0 ,width:WIDTH, height:HEIGHT))
         self.view.addSubview(bgImageVeiw)
-        bgImageVeiw.dataSource = self
-        
+        bgImageVeiw.delegate = self
+        bgImageVeiw.startAnimating()
         
         //用户名
         let UserNameTextFeild = createTextField(CGRect(x:20, y:80 ,width:WIDTH-40, height:36), placeholder: "请输入用户名", passWord: false, Font: 14)
@@ -88,15 +92,21 @@ class LoginViewController: UIViewController,UITextFieldDelegate,JSAnimatedImages
     }
     
     
-    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+    //JSAnimatedImagesView 代理
+//    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+//        return 3
+//    }
+//    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+//        return UIImage(named:"\(index+1).jpg")
+//    }
+    
+    //RCAnimatedImagesViewDelegate 代理
+    func animatedImagesNumberOfImages(animatedImagesView: RCAnimatedImagesView!) -> UInt {
         return 3
     }
-    
-    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+    func animatedImagesView(animatedImagesView: RCAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
         return UIImage(named:"\(index+1).jpg")
     }
-    
-    
     
     
     

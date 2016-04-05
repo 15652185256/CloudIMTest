@@ -6,4 +6,5 @@
 #import <KxMenu/KxMenu.h>
 #import <PopMenu/PopMenu.h>
 #import "CDPMonitorKeyboard.h"
-#import "JSAnimatedImagesView.h"
+#import <JSAnimatedImagesView/JSAnimatedImagesView.h>
+#import "RCAnimatedImagesView.h"

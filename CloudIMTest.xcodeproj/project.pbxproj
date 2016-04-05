@@ -36,13 +36,14 @@
 		041D54F51CAA244C00030FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041D54F41CAA244C00030FB0 /* Assets.xcassets */; };
 		041D54F81CAA244C00030FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041D54F61CAA244C00030FB0 /* LaunchScreen.storyboard */; };
 		041D55001CAA28E800030FB0 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 041D54FF1CAA28E800030FB0 /* PodFile */; };
-		0426661F1CAE5B9F0092DC3D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0426661C1CAE5B9F0092DC3D /* 1.jpg */; };
-		042666201CAE5B9F0092DC3D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0426661D1CAE5B9F0092DC3D /* 2.jpg */; };
-		042666211CAE5B9F0092DC3D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0426661E1CAE5B9F0092DC3D /* 3.jpg */; };
 		044CAD1F1CACC31D00A96EB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */; };
 		044CAD241CACC69900A96EB7 /* CDPMonitorKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD231CACC69900A96EB7 /* CDPMonitorKeyboard.m */; };
 		044CAD261CAD0B7D00A96EB7 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CAD251CAD0B7D00A96EB7 /* RoundImageView.swift */; };
 		045BAE1B1CAA67C800F86CE1 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */; };
+		04633FEE1CB34AE500F01ECC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04633FEB1CB34AE500F01ECC /* 1.jpg */; };
+		04633FEF1CB34AE500F01ECC /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04633FEC1CB34AE500F01ECC /* 2.jpg */; };
+		04633FF01CB34AE500F01ECC /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04633FED1CB34AE500F01ECC /* 3.jpg */; };
+		04633FF41CB34BAB00F01ECC /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04633FF31CB34BAB00F01ECC /* RCAnimatedImagesView.m */; };
 		0499B1D81CAA571400497DE6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499B1D51CAA571400497DE6 /* Config.swift */; };
 		BB51412310708B9ACFF56339 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FACDF321335E9D914CE203 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -79,14 +80,16 @@
 		041D54F71CAA244C00030FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041D54F91CAA244C00030FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041D54FF1CAA28E800030FB0 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
-		0426661C1CAE5B9F0092DC3D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		0426661D1CAE5B9F0092DC3D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		0426661E1CAE5B9F0092DC3D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		044CAD1E1CACC31D00A96EB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		044CAD221CACC69900A96EB7 /* CDPMonitorKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPMonitorKeyboard.h; sourceTree = "<group>"; };
 		044CAD231CACC69900A96EB7 /* CDPMonitorKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPMonitorKeyboard.m; sourceTree = "<group>"; };
 		044CAD251CAD0B7D00A96EB7 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		045BAE1A1CAA67C800F86CE1 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		04633FEB1CB34AE500F01ECC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		04633FEC1CB34AE500F01ECC /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		04633FED1CB34AE500F01ECC /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		04633FF21CB34BAB00F01ECC /* RCAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAnimatedImagesView.h; sourceTree = "<group>"; };
+		04633FF31CB34BAB00F01ECC /* RCAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAnimatedImagesView.m; sourceTree = "<group>"; };
 		0499B1CD1CAA519A00497DE6 /* CloudIMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudIMTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		0499B1D51CAA571400497DE6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		56BCC9A61BB76F0C5D1BBF08 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +120,7 @@
 		04188C0C1CAB68CC004B7207 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0426661B1CAE5B9F0092DC3D /* BgImage */,
+				04633FEA1CB34AE500F01ECC /* BgImage */,
 				04188C0D1CAB68CC004B7207 /* TabBar */,
 			);
 			path = Images;
@@ -192,19 +195,10 @@
 			path = CloudIMTest;
 			sourceTree = "<group>";
 		};
-		0426661B1CAE5B9F0092DC3D /* BgImage */ = {
-			isa = PBXGroup;
-			children = (
-				0426661C1CAE5B9F0092DC3D /* 1.jpg */,
-				0426661D1CAE5B9F0092DC3D /* 2.jpg */,
-				0426661E1CAE5B9F0092DC3D /* 3.jpg */,
-			);
-			path = BgImage;
-			sourceTree = "<group>";
-		};
 		044CAD201CACC69900A96EB7 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				04633FF11CB34BAB00F01ECC /* RCAnimatedImagesView */,
 				044CAD211CACC69900A96EB7 /* CDPMonitorKeyboard */,
 			);
 			path = Vendor;
@@ -217,6 +211,25 @@
 				044CAD231CACC69900A96EB7 /* CDPMonitorKeyboard.m */,
 			);
 			path = CDPMonitorKeyboard;
+			sourceTree = "<group>";
+		};
+		04633FEA1CB34AE500F01ECC /* BgImage */ = {
+			isa = PBXGroup;
+			children = (
+				04633FEB1CB34AE500F01ECC /* 1.jpg */,
+				04633FEC1CB34AE500F01ECC /* 2.jpg */,
+				04633FED1CB34AE500F01ECC /* 3.jpg */,
+			);
+			path = BgImage;
+			sourceTree = "<group>";
+		};
+		04633FF11CB34BAB00F01ECC /* RCAnimatedImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				04633FF21CB34BAB00F01ECC /* RCAnimatedImagesView.h */,
+				04633FF31CB34BAB00F01ECC /* RCAnimatedImagesView.m */,
+			);
+			path = RCAnimatedImagesView;
 			sourceTree = "<group>";
 		};
 		0499B1D41CAA571400497DE6 /* Config */ = {
@@ -322,13 +335,13 @@
 				04188C251CAB68CC004B7207 /* tabbar_information@3x.png in Resources */,
 				041D54F31CAA244C00030FB0 /* Main.storyboard in Resources */,
 				04188C2C1CAB68CC004B7207 /* un_tabbar_information@2x.png in Resources */,
-				042666211CAE5B9F0092DC3D /* 3.jpg in Resources */,
+				04633FF01CB34AE500F01ECC /* 3.jpg in Resources */,
 				04188C271CAB68CC004B7207 /* tabbar_tool@3x.png in Resources */,
 				04188C2A1CAB68CC004B7207 /* tabbar_venues@2x.png in Resources */,
 				04188C301CAB68CC004B7207 /* un_tabbar_user@2x.png in Resources */,
 				04188C241CAB68CC004B7207 /* tabbar_information@2x.png in Resources */,
-				0426661F1CAE5B9F0092DC3D /* 1.jpg in Resources */,
-				042666201CAE5B9F0092DC3D /* 2.jpg in Resources */,
+				04633FEE1CB34AE500F01ECC /* 1.jpg in Resources */,
+				04633FEF1CB34AE500F01ECC /* 2.jpg in Resources */,
 				04188C321CAB68CC004B7207 /* un_tabbar_venues@2x.png in Resources */,
 				04188C331CAB68CC004B7207 /* un_tabbar_venues@3x.png in Resources */,
 			);
@@ -391,6 +404,7 @@
 			files = (
 				04188C371CAB8107004B7207 /* ServeViewController.swift in Sources */,
 				04188C351CAB80BC004B7207 /* ContactViewController.swift in Sources */,
+				04633FF41CB34BAB00F01ECC /* RCAnimatedImagesView.m in Sources */,
 				044CAD261CAD0B7D00A96EB7 /* RoundImageView.swift in Sources */,
 				04188C391CAB821D004B7207 /* AboutViewController.swift in Sources */,
 				041D54F01CAA244C00030FB0 /* ViewController.swift in Sources */,
